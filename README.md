@@ -34,3 +34,7 @@ NOTE: Must only commit to this file from the web gui - DO NOT use git client
 - Contacts - no backup
 - Photos - email service providers android app
 - Signal - linked device on linux regularly used
+
+## Laptop
+- regular full backups to NAS, keeping existing backups
+- regular full backups to email provider, removing existing backups
