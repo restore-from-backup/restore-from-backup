@@ -31,5 +31,6 @@ NOTE: Must only commit to this file from the web gui - DO NOT use git client
 # Backup
 ## Android
 
-Contacts - no backup
-Photos - email service providers android app
+- Contacts - no backup
+- Photos - email service providers android app
+- Signal - linked device on linux regularly used
