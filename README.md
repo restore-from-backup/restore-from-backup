@@ -37,4 +37,6 @@ NOTE: Must only commit to this file from the web gui - DO NOT use git client
 
 ## Laptop
 - regular full backups to NAS, keeping existing backups
+--   open backup service, mount sshfs and set this as target
+--   encrypt passphrase with private key and store along with the backup fil
 - regular full backups to email provider, removing existing backups
