@@ -1,16 +1,35 @@
-## Hi there 👋
+NOTE: Must only commit to this file from the web gui - DO NOT use git client
+#  Restore Process
+## DR Scenario Yubikey unavailable
+- Access vault-gpg-and-keytocard-only virtual machine
+- There will be a folder in the home drive with paperkey and public_key
+- Import public key
+- Import paperkey (private key)
+- Private key is passphrase protected (see keys.md)
+- There is a revocation cert in the same folder. Consider revocation depending on where the yubikey went.
+- Import subkeys onto new yubikey
 
-<!--
-**restore-from-backup/restore-from-backup** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## DR Scenario Laptop unavailable + Yubikey unavailable
+- Rebuild new laptop
+- Login to NAS (see keys.md)
+- Decrypt (load nas key) to decrypt NAS zfs volume (see keys.md)
+- Login to sshfs lxc (see keys.md)
+- set sshfs to allow password login to account (see keys.md)
+- create backup virtual machine mount sshfs
+- source real paperkey - OCR and restore key
+- restore from backup (see keys.md)
+- Follow DR Scenarion Yubikey unavailable
+  
+## DR Scenario Laptop unavailable
+- Rebuild new laptop
+- Login to NAS (see keys.md)
+- Decrypt (load nas key) to decrypt NAS zfs volume (see keys.md)
+- Login to sshfs lxc (see keys.md)
+- create backup virtual machine mount sshfs
+- restore from backup (see keys.md)
+  
+# Backup
+## Android
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Contacts - no backup
+Photos - email service providers android app
