@@ -1,5 +1,11 @@
 NOTE: Must only commit to this file from the web gui - DO NOT use git client
 #  Restore Process
+## Lost Yubikey
+- Restore from vault and load to new yubikey
+
+## Lost Vault
+- Restore from PaperKey ( paper keys are in laminate at location A and another at location B)
+
 ## DR Scenario Yubikey unavailable
 - Access vault-gpg-and-keytocard-only virtual machine
 - There will be a folder in the home drive with paperkey and public_key
