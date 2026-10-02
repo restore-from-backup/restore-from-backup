@@ -33,6 +33,12 @@ NOTE: Must only commit to this file from the web gui - DO NOT use git client
 - Login to sshfs lxc (see keys.md)
 - create backup virtual machine mount sshfs
 - restore from backup (see keys.md)
+
+## DR Scenario NAS and laptop unavailable
+- Rebuild new laptop
+- Gain access to paper key and decrypt
+- Gain access to Backup provider encrypted restore paper passphrase
+- Decrypt passphrase and gain access to Backup
   
 # Backup
 ## Android
